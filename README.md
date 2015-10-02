@@ -33,42 +33,43 @@ Take power from a player.
 #### B
 Set the item limit.
 
-### **Table of names or IDs to use:**
+### Table of names or IDs to use:
 You can use either, it doesn't care at all!
-ID numbers | Names
--------- | ---------
-id: 0 | name: arrow
-id: 1 | name: small box
-id: 2 | name: large box
-id: 3 | name: small plank
-id: 4 | name: large plank
-id: 6 | name: ball
-id: 7 | name: trampoline
-id: 10 | name: anvil
-id: 17 | name: cannon
-id: 23 | name: bomb
-id: 24 | name: spirit
-id: 28 | name: balloon
-id: 32 | name: rune
-id: 33 | name: chicken
-id: 34 | name: snowball
-id: 35 | name: v arrow
-id: 39 | name: apple
-id: 40 | name: sheep
-id: 45 | name: ice plank
-id: 46 | name: choco plank
-id: 54 | name: frozen mouse
-id: 57 | name: cloud
-id: 59 | name: bubble
-id: 60 | name: tiny plank
-id: 61 | name: companion cube
-id: 62 | name: stable rune
-id: 65 | name: pufferfish
-id: 67 | name: giant plank
-id: 68 | name: triangle box
-id: 69 | name: s plank
-id: 89 | name: pumpkin
-id: 90 | name: tombstone
-id: 601 | name: pokeball
+
+ID | Names
+-------- | :--------
+0 | arrow
+1 | small box
+2 | large box
+3 | small plank
+4 | large plank
+6 | ball
+7 | trampoline
+10 | anvil
+17 | cannon
+23 | bomb
+24 | spirit
+28 | balloon
+32 | rune
+33 | chicken
+34 | snowball
+35 | v arrow
+39 | apple
+40 | sheep
+45 | ice plank
+46 | choco plank
+54 | frozen mouse
+57 | cloud
+59 | bubble
+60 | tiny plank
+61 | companion cube
+62 | stable rune
+65 | pufferfish
+67 | giant plank
+68 | triangle box
+69 | s plank
+89 | pumpkin
+90 | tombstone
+601 | pokeball
 
 *Note: If either don't exist, Ball (id:6) is spawned*
