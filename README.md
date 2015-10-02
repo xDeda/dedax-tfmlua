@@ -1,7 +1,7 @@
 # MasterScript
 ## For dicking around in the Tribehouse
 
-You clik the textdisplay boxes that are conveniently placed just above the TFM header in the UI:
+You click the textdisplay boxes that are conveniently placed just above the TFM header in the UI:
 - *click type:* will cycle through the different clicks you can use. 
 - *teleporting:* will drop down a menu of players in the room, click one to target them for teleporting.
   - Your click type will be set to tp (teleport) when you select a player.
@@ -36,7 +36,7 @@ Set the item limit.
 ### **Table of names or IDs to use:**
 You can use either, it doesn't care at all!
 ID numbers | Names 
---------|----------
+------- | ---------
 id: 0   | name: arrow
 id: 1   | name: small box
 id: 2   | name: large box
