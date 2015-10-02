@@ -35,8 +35,8 @@ Set the item limit.
 
 ### **Table of names or IDs to use:**
 You can use either, it doesn't care at all!
-ID numbers | Names 
------- - | ---------
+ID numbers | Names
+-------- | ---------
 id: 0 | name: arrow
 id: 1 | name: small box
 id: 2 | name: large box
