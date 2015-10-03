@@ -23,6 +23,8 @@ Get a help window. (it will show up on its own)
 Shoot balls left, down and right respectively.
 #### **C**
 Clear all spawned objects.
+#### **Spacebar**
+Cycle through click types.
 #### **X**
 Free up your mouseclick.
 ### **Master keys:**
