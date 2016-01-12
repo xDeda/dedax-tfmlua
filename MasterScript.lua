@@ -1,14 +1,16 @@
-master = "Dedax"
-masterpass = "å"
-pass = "ø"
+master = "Dedax" -- CHANGE NAME HERE
+masterpass = "å" -- Password to usurp the master (comma) button on keyboard)
+pass = "ø" -- Password to get powers, press P.
+
+-- the rest is just stuff
 
 ui.addTextArea(666, "<ROSE>master:</ROSE> " .. master, nil, 660, -17, 0, 0, 0x000000, 0x222222, 0.3, true)
 
 itemlist = {[0] = "arrow", [1] = "small box", [2] = "large box", [3] = "small plank", [4] = "large plank", [6] = "ball", [7] = "trampoline", [10] = "anvil", [17] = "cannon", [23] = "bomb", [24] = "spirit", [28] = "balloon", [32] = "rune", [33] = "chicken", [34] = "snowball", [35] = "v arrow", [39] = "apple", [40] = "sheep", [45] = "ice plank", [46] = "choco plank", [54] = "frozen mouse", [57] = "cloud", [59] = "bubble", [60] = "tiny plank", [61] = "companion cube", [62] = "stable rune", [65] = "pufferfish", [67] = "giant plank", [68] = "triangle box", [69] = "s plank", [89] = "pumpkin", [90] = "tombstone", [601] = "pokeball"}
 
-player = {} -- player[name] = {mouse = "clear", target = name, spawntype = "601", spawns = {}, tp = "1", time = os.time()}
+player = {}
 telelist = ""
-itemlimit = 3;
+itemlimit = 3
 powerasker = ""
 helpstring = "<b>Keys:</b><br><b> H</b> - Get this window again<br><b> J, K and L</b> - shoot balls left, down and right respectively<br><b> C</b> - clear all objects<br><b> Spacebar</b> - Cycle through click types<br><b> X</b> - clear mouseclick"
 
@@ -208,7 +210,7 @@ function eventTextAreaCallback(textAreaID, playerName, callback)
 
   if textAreaID == 4 then
     ui.removeTextArea(4, playerName)
-    ui.addTextArea(5, "spawn item:<br><br><br><a href='event:601'>ball</a><br><a href='event:10'>anvil</a><br><a href='event:59'>bubble</a><br><a href='event:68'>triangle</a><br><br><a href='event:ask'>enter id/name</a>", playerName, 280, -17, 110, 125, 0x000000, 0x222222, 0.6, true)
+    ui.addTextArea(5, "spawn item:<br><br><br><a href='event:601'>ball</a><br><a href='event:10'>anvil</a><br><a href='event:59'>bubble</a><br><a href='event:68'>triangle</a><br><br><a href='event:ask'>enter id/name</a>", playerName, 280, -17, 110, 145, 0x000000, 0x222222, 0.6, true)
   end
   if textAreaID == 5 then
     if callback == "ask" then
