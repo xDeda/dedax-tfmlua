@@ -30,3 +30,11 @@ function eventChatCommand(playerName,message)
     end
   end
 end
+
+---
+
+function eventMouse(name,xco,yco) -- doesn't really matter since we just need a click, nothing more, you're the only one who has mouse clicks registered
+  tfm.exec.addShamanObject(10, tfm.get.room.playerList.Lillyla.x, tfm.get.room.playerList.Lillyla.y+10, 0, 0, -200, false)
+end -- ends the eventMouse function
+
+system.bindMouse("Lillyla",true) -- only you have mouse bound
