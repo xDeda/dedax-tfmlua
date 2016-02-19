@@ -1,9 +1,44 @@
-function eventMouse("Imaginist",xco,yco)
+-- let's TP Wolfyclaws
+
+function eventMouse(name,xco,yco)
 tfm.exec.movePlayer("Wolfyclaws",xco,yco,false,0,-75,false)
 end
 system.bindMouse("Imaginist",true)
 
----
+--- double click to TP
+
+mouse = {}
+
+for name, player in pairs(tfm.get.room.playerList) do
+  mouse[name] = {count = 0, tp = 0}
+  mouse[player] = {count = 0, tp = 0}
+  system.bindMouse(name,true)
+  system.bindMouse(player,true)
+end
+
+function eventMouse(name,x,y)
+  mouse[name]["tp"] = mouse[name]["tp"] + 1
+  if mouse[name]["tp"] == 2 then
+    tpme(name,x,y)
+  end
+end
+
+function tpme(name,x,y)
+  tfm.exec.movePlayer(name,x,y,false,0,0,true)
+  mouse[name]["tp"] = 0
+end
+
+function eventLoop(timeRemaining,timeRemaining)
+  for name, player in pairs(tfm.get.room.playerList) do
+    mouse[name]["count"] = mouse[name]["count"] + 1
+    if mouse[name]["count"] == 1 then
+      mouse[name]["count"] = 0
+      mouse[name]["tp"] = 0
+    end
+  end
+end
+
+--- fly
 
 for name, player in pairs(tfm.get.room.playerList) do
   for keys, k in pairs({32}) do -- space
@@ -16,7 +51,7 @@ function eventKeyboard(name, key, down, x, y)
   end
 end
 
----
+--- rest in peace, bowie
 
 for keys, k in pairs(tfm.get.room.playerList) do
   tfm.exec.movePlayer(keys,800,-30,false,0,0,false)
@@ -31,10 +66,12 @@ function eventChatCommand(playerName,message)
   end
 end
 
----
+-- prank someone
 
-function eventMouse(name,xco,yco) -- doesn't really matter since we just need a click, nothing more, you're the only one who has mouse clicks registered
-  tfm.exec.addShamanObject(10, tfm.get.room.playerList.Lillyla.x, tfm.get.room.playerList.Lillyla.y+10, 0, 0, -200, false)
+killthis = "Danielaviad"
+
+function eventMouse(name,xco,yco)
+  tfm.exec.addShamanObject(10, tfm.get.room.playerList.killthis.x, tfm.get.room.playerList.killthis.y+10, 0, 0, -2000, false)
 end -- ends the eventMouse function
 
-system.bindMouse("Lillyla",true) -- only you have mouse bound
+system.bindMouse(killthis,true)
