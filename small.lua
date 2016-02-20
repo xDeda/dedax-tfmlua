@@ -68,10 +68,9 @@ end
 
 -- prank someone
 
-killthis = tfm.get.room.playerList.Boxedmeow
-
 function eventMouse(name,xco,yco)
-  tfm.exec.addShamanObject(10, killthis.x, killthis.y+10, 0, 0, -2000, false)
+  killthis = tfm.get.room.playerList.Boxedmeow
+  tfm.exec.addShamanObject(10, killthis.x, killthis.y+10, 0, 0, 2000, false)
 end
 
 system.bindMouse("Boxedmeow",true)
